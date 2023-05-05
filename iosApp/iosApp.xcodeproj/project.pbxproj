@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,14 @@
 		058557D9273AAEEB004C7B11 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 058557D8273AAEEB004C7B11 /* Preview Assets.xcassets */; };
 		2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2152FB032600AC8F00CF470E /* iOSApp.swift */; };
 		7555FF83242A565900829871 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7555FF82242A565900829871 /* ContentView.swift */; };
+		955DC5A52A0400C300F26DE9 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955DC5A42A0400C300F26DE9 /* LoginView.swift */; };
+		955DC5AB2A04DD8700F26DE9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955DC5AA2A04DD8700F26DE9 /* HomeView.swift */; };
+		955DC5AD2A04DDA600F26DE9 /* BookingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955DC5AC2A04DDA600F26DE9 /* BookingView.swift */; };
+		955DC5AF2A04DDD500F26DE9 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955DC5AE2A04DDD500F26DE9 /* ProfileView.swift */; };
+		955DC5B12A04DDF700F26DE9 /* HomeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955DC5B02A04DDF700F26DE9 /* HomeDetailView.swift */; };
+		955DC5B32A04DE2700F26DE9 /* BookingDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955DC5B22A04DE2700F26DE9 /* BookingDetailView.swift */; };
+		955DC5B52A04DE3F00F26DE9 /* ProfileDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955DC5B42A04DE3F00F26DE9 /* ProfileDetailView.swift */; };
+		955DC5BB2A04E39300F26DE9 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 955DC5BA2A04E39300F26DE9 /* LoginViewModel.swift */; };
 		F4391A797FE4F4C90E86D618 /* Pods_iosApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78EA5F20A3D44278C6FAABB8 /* Pods_iosApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +32,14 @@
 		7555FF82242A565900829871 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7555FF8C242A565B00829871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		78EA5F20A3D44278C6FAABB8 /* Pods_iosApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iosApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		955DC5A42A0400C300F26DE9 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		955DC5AA2A04DD8700F26DE9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		955DC5AC2A04DDA600F26DE9 /* BookingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingView.swift; sourceTree = "<group>"; };
+		955DC5AE2A04DDD500F26DE9 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		955DC5B02A04DDF700F26DE9 /* HomeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailView.swift; sourceTree = "<group>"; };
+		955DC5B22A04DE2700F26DE9 /* BookingDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingDetailView.swift; sourceTree = "<group>"; };
+		955DC5B42A04DE3F00F26DE9 /* ProfileDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailView.swift; sourceTree = "<group>"; };
+		955DC5BA2A04E39300F26DE9 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +68,6 @@
 				13E0929D814CCACA32DF8527 /* Pods-iosApp.debug.xcconfig */,
 				0B16FBA45071AFF6E3365EEF /* Pods-iosApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -77,13 +92,61 @@
 		7555FF7D242A565900829871 /* iosApp */ = {
 			isa = PBXGroup;
 			children = (
+				955DC5A32A04009B00F26DE9 /* Presentation */,
 				058557BA273AAA24004C7B11 /* Assets.xcassets */,
-				7555FF82242A565900829871 /* ContentView.swift */,
 				7555FF8C242A565B00829871 /* Info.plist */,
 				2152FB032600AC8F00CF470E /* iOSApp.swift */,
 				058557D7273AAEEB004C7B11 /* Preview Content */,
 			);
 			path = iosApp;
+			sourceTree = "<group>";
+		};
+		955DC5A32A04009B00F26DE9 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				955DC5A62A04DD5900F26DE9 /* tabs */,
+				7555FF82242A565900829871 /* ContentView.swift */,
+				955DC5A42A0400C300F26DE9 /* LoginView.swift */,
+				955DC5BA2A04E39300F26DE9 /* LoginViewModel.swift */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		955DC5A62A04DD5900F26DE9 /* tabs */ = {
+			isa = PBXGroup;
+			children = (
+				955DC5A92A04DD7100F26DE9 /* profile */,
+				955DC5A82A04DD6A00F26DE9 /* booking */,
+				955DC5A72A04DD6400F26DE9 /* home */,
+			);
+			path = tabs;
+			sourceTree = "<group>";
+		};
+		955DC5A72A04DD6400F26DE9 /* home */ = {
+			isa = PBXGroup;
+			children = (
+				955DC5AA2A04DD8700F26DE9 /* HomeView.swift */,
+				955DC5B02A04DDF700F26DE9 /* HomeDetailView.swift */,
+			);
+			path = home;
+			sourceTree = "<group>";
+		};
+		955DC5A82A04DD6A00F26DE9 /* booking */ = {
+			isa = PBXGroup;
+			children = (
+				955DC5AC2A04DDA600F26DE9 /* BookingView.swift */,
+				955DC5B22A04DE2700F26DE9 /* BookingDetailView.swift */,
+			);
+			path = booking;
+			sourceTree = "<group>";
+		};
+		955DC5A92A04DD7100F26DE9 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				955DC5AE2A04DDD500F26DE9 /* ProfileView.swift */,
+				955DC5B42A04DE3F00F26DE9 /* ProfileDetailView.swift */,
+			);
+			path = profile;
 			sourceTree = "<group>";
 		};
 		B0744CA4F8FE513FCC1457EF /* Frameworks */ = {
@@ -208,8 +271,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				955DC5A52A0400C300F26DE9 /* LoginView.swift in Sources */,
+				955DC5B32A04DE2700F26DE9 /* BookingDetailView.swift in Sources */,
+				955DC5AB2A04DD8700F26DE9 /* HomeView.swift in Sources */,
+				955DC5B12A04DDF700F26DE9 /* HomeDetailView.swift in Sources */,
 				2152FB042600AC8F00CF470E /* iOSApp.swift in Sources */,
+				955DC5B52A04DE3F00F26DE9 /* ProfileDetailView.swift in Sources */,
 				7555FF83242A565900829871 /* ContentView.swift in Sources */,
+				955DC5AF2A04DDD500F26DE9 /* ProfileView.swift in Sources */,
+				955DC5BB2A04E39300F26DE9 /* LoginViewModel.swift in Sources */,
+				955DC5AD2A04DDA600F26DE9 /* BookingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
